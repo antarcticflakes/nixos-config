@@ -1,0 +1,9 @@
+{
+  "layer": "top",
+  "position": "top",
+
+  "custom/appmenu": {
+     "format": "Niri",
+     "on-click": "fuzzel"
+  }
+}
