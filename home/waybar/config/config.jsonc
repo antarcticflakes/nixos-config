@@ -1,9 +1,79 @@
 {
-  "layer": "top",
-  "position": "top",
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+    "spacing": 4,
+    "margin-top": 0,
+    "margin-bottom": 0,
+    "margin-left": 0,
+    "margin-right": 0,
+    "modules-left": ["custom/niri_launcher", "niri/workspaces", "niri/window"],
+    "modules-center": ["clock"],
+    "modules-right": ["pulseaudio", "cpu", "memory", "tray", "custom/power"],
 
-  "custom/appmenu": {
-     "format": "Niri",
-     "on-click": "fuzzel"
-  }
+    "custom/niri_launcher": {
+        "format": "Niri",
+        "on-click": "fuzzel",
+        "tooltip": false
+    },
+
+    "niri/workspaces": {
+        "format": "{name}",
+        "all-outputs": true,
+        "disable-scroll": false
+    },
+
+    "niri/window": {
+        "format": "{}",
+        "max-length": 50
+    },
+
+    "clock": {
+        "format": "{:%H %M %S}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "calendar": {
+            "mode": "year",
+            "mode-mon-col": 3,
+            "weeks-pos": "right",
+            "on-scroll": 1,
+            "format": {
+                "months": "<span color='#ffead3'><b>{}</b></span>",
+                "days": "<span color='#ecc7d2'>{}</span>",
+                "weeks": "<span color='#a6d189'>{}</span>",
+                "weekdays": "<span color='#a6d189'>{}</span>",
+                "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
+            }
+        }
+    },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": "󰝟 Muted",
+        "format-icons": {
+            "default": [""]
+        },
+        "on-click": "pavucontrol",
+        "tooltip": false
+    },
+
+    "cpu": {
+        "format": " {usage}%",
+        "tooltip": false
+    },
+
+    "memory": {
+        "format": " {}%",
+        "tooltip": false
+    },
+
+    "tray": {
+        "spacing": 10,
+        "icon-size": 20
+    },
+
+    "custom/power": {
+        "format": "",
+        "on-click": "wlogout",
+        "tooltip": false
+    }
 }

@@ -46,5 +46,7 @@
     polkit_gnome
 
     xfce.thunar
+
+    just
   ];
 }

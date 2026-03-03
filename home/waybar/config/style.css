@@ -1,0 +1,105 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "Maple Mono", "Font Awesome 6 Free", "Font Awesome 6 Brands", sans-serif;
+    font-size: 14px;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+window#waybar {
+    background-color: #191724;
+    color: #e0def4;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+#custom-niri_launcher,
+#workspaces,
+#window,
+#clock,
+#pulseaudio,
+#cpu,
+#memory,
+#tray,
+#custom-power {
+    background-color: #1f1d2e;
+    padding: 0 8px;
+    margin: 2px 0;
+}
+
+.modules-left > widget:first-child > #custom-niri_launcher {
+    margin-left: 2px;
+}
+.modules-left > widget:last-child > #window {
+    margin-right: 2px;
+}
+
+#workspaces button {
+    background: transparent;
+    border: none;
+    color: #908caa;
+    padding: 0 4px;
+    min-width: 20px;
+}
+
+#workspaces button.active {
+    color: #ebbcba;
+    background-color: #26233a;
+}
+
+#workspaces button:hover {
+    background-color: #403d52;
+    color: #e0def4;
+}
+
+#window {
+    color: #e0def4;
+}
+
+#clock {
+    color: #9ccfd8;
+    font-weight: bold;
+}
+
+#pulseaudio {
+    color: #c4a7e7;
+}
+
+#cpu {
+    color: #f6c177;
+}
+
+#memory {
+    color: #eb6f92;
+}
+
+#tray {
+    background-color: transparent;
+    padding: 0 4px;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #eb6f92;
+}
+
+#custom-power {
+    color: #eb6f92;
+    padding-right: 12px;
+}
+
+#custom-power:hover {
+    background-color: #403d52;
+}
+
+tooltip {
+    background: #191724;
+    border: 1px solid #6e6a86;
+    border-radius: 0;
+}
