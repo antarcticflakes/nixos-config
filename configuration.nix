@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ config, lib, pkgs, inputs, ... }:
 
 {
   imports = [
@@ -138,7 +138,6 @@
     git
     wget
     distrobox
-
     xwayland-satellite
   ];
 
