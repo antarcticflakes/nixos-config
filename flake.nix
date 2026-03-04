@@ -8,9 +8,14 @@
       url = "github:nix-community/home-manager/release-25.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    nixvim = {
+      url = "github:nix-community/nixvim/nixos-25.11";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = inputs@{ self, nixpkgs, home-manager, ... }: {
+  outputs = inputs@{ self, nixpkgs, home-manager, nixvim, ... }: {
     nixosConfigurations = {
       starlight = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs; };
@@ -22,8 +27,10 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.users.ichiyo = import ./home;
-            home-manager.extraSpecialArgs = inputs;
-            home-manager.backupFileExtension = "hmbak";
+            home-manager.extraSpecialArgs = {
+              inherit nixvim;
+            };
+            home-manager.backupFileExtension = "*.hmbak";
           }
         ];
       };

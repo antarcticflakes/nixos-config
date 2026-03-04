@@ -4,5 +4,11 @@
   programs.bash = {
     enable = true;
     enableCompletion = true;
+    bashrcExtra = ''
+
+    '';
+    shellAliases = {
+      nvi = "nvim";
+    };
   };
 }

@@ -1,10 +1,11 @@
-{ config, pkgs, ... }:
+{ config, pkgs, nixvim, ... }:
 
 {
   home.username = "ichiyo";
   home.homeDirectory = "/home/ichiyo";
 
   imports = [
+    nixvim.homeModules.nixvim
     ./packages.nix
     ./git
     ./starship
@@ -16,6 +17,7 @@
     ./swaybg
     ./swayidle
     ./mako
+    ./nixvim
     ./hyfetch
     ./theme
   ];
