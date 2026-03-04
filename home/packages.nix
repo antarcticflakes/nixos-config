@@ -42,6 +42,7 @@
     cmake
 
     mako
+    wlogout
     polkit
     polkit_gnome
 

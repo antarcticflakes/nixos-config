@@ -14,7 +14,7 @@
       Requisite = "graphical-session.target";
     };
     Service = {
-      ExecStart = "${pkgs.swaybg}/bin/swaybg -m fill -i \"${config.home.homeDirectory}/.config/wallpapers/wallpaper-41.jpg\"";
+      ExecStart = "${pkgs.swaybg}/bin/swaybg -m fill -i \"${config.home.homeDirectory}/.config/wallpapers/rose-pine-nix.png\"";
       Restart = "on-failure";
     };
     Install = {

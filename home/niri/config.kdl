@@ -66,7 +66,7 @@ environment {
 }
 
 cursor {
-    xcursor-size 8
+    xcursor-size 16
 }
 
 window-rule {

@@ -16,6 +16,7 @@
     ./swaybg
     ./swayidle
     ./mako
+    ./hyfetch
     ./theme
   ];
 
