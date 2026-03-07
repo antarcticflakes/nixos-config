@@ -9,17 +9,24 @@
       treesitter.enable = true;
       lualine = {
         enable = true;
-        globalstatus = true;
+	settings = {
+	  options = {
+            globalstatus = true;
+	  };
+	};
       };
       bufferline = {
         enable = true;
-	options = {
-          offsets = [{
-            filetype = "NvimTree";
-            text = "File Explorer";
-            highlight = "Directory";
-            text_align = "left";
-          }];
+        settings = {
+          options = {
+            offsets = [{
+              filetype = "NvimTree";
+              text = "File Explorer";
+              highlight = "Directory";
+              text_align = "left";
+            }];
+          };
+        };
       };
       nvim-tree = {
         enable = true;
@@ -30,6 +37,7 @@
           direction = "float";
         };
       };
+      web-devicons.enable = true;
     };
   };
-};
+}
