@@ -30,7 +30,7 @@
       };
       nvim-tree = {
         enable = true;
-	auto_close = true;
+        autoClose = true;
       };
       toggleterm = {
         enable = true;
