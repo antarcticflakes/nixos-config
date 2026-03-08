@@ -57,6 +57,7 @@
     xserver = {
       enable = true;
       xkb.layout = "us";
+      excludePackages = [ pkgs.xterm ];
     };
     pipewire = {
       enable = true;
