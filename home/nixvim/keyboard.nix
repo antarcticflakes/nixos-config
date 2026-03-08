@@ -10,7 +10,7 @@
       {
         mode = "n";
         key = "<leader>e";
-        action = ":NvimTreeToggle<CR>";
+        action = ":Neotree toggle<CR>";
         options = {
           desc = "File Tree";
         };

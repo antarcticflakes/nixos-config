@@ -9,18 +9,18 @@
       treesitter.enable = true;
       lualine = {
         enable = true;
-	settings = {
-	  options = {
+        settings = {
+          options = {
             globalstatus = true;
-	  };
-	};
+          };
+        };
       };
       bufferline = {
         enable = true;
         settings = {
           options = {
             offsets = [{
-              filetype = "NvimTree";
+              filetype = "neo-tree";
               text = "File Explorer";
               highlight = "Directory";
               text_align = "left";
@@ -28,9 +28,15 @@
           };
         };
       };
-      nvim-tree = {
+      neo-tree = {
         enable = true;
-        autoClose = true;
+        settings = {
+          close_if_last_window = true;
+          source_selector = {
+            winbar = true;
+            statusline = false;
+          };
+        };
       };
       toggleterm = {
         enable = true;

@@ -2,16 +2,16 @@
 
 {
   programs.nixvim = {
-    opts.completeopt = [
-      "noselect"
-    ];
+    # opts.completeopt = [
+    #   "noselect"
+    # ];
 
     plugins = {
       luasnip.enable = true;
 
       lspkind = {
         enable = true;
-	settings = {
+        settings = {
           mode = "symbol_text";
           cmp = {
             enable = true;
@@ -22,7 +22,7 @@
               luasnip = "[SNIP]";
             };
           };
-	};
+        };
       };
 
       cmp = {
