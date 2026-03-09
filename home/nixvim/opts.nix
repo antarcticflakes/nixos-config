@@ -13,5 +13,6 @@
 
       shell = "bash";
     };
+    editorconfig.enable = true;
   };
 }

@@ -126,7 +126,9 @@
   programs = {
     niri.enable = true;
     firefox.enable = true;
-
+    nh = {
+      enable = true;
+    };
     mtr.enable = true;
     gnupg.agent = {
       enable = true;
@@ -134,13 +136,16 @@
     };
   };
 
-  environment.systemPackages = with pkgs; [
-    vim
-    git
-    wget
-    distrobox
-    xwayland-satellite
-  ];
+  environment = {
+    systemPackages = with pkgs; [
+      vim
+      git
+      wget
+      distrobox
+      xwayland-satellite
+      nix-output-monitor
+    ];
+  };
 
   virtualisation = {
     podman = {
