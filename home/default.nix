@@ -1,4 +1,9 @@
-{ config, pkgs, nixvim, ... }:
+{
+  config,
+  pkgs,
+  nixvim,
+  ...
+}:
 
 {
   home.username = "ichiyo";

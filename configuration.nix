@@ -1,4 +1,10 @@
-{ config, lib, pkgs, inputs, ... }:
+{
+  config,
+  lib,
+  pkgs,
+  inputs,
+  ...
+}:
 
 {
   imports = [
@@ -141,9 +147,11 @@
       vim
       git
       wget
+      just
       distrobox
       xwayland-satellite
       nix-output-monitor
+      nixfmt
     ];
   };
 
@@ -165,4 +173,3 @@
 
   system.stateVersion = "25.11";
 }
-

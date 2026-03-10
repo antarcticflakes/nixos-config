@@ -17,6 +17,11 @@
       }
       {
         mode = "n";
+        key = "<leader>f";
+        action = ":Neotree focus<CR>";
+      }
+      {
+        mode = "n";
         key = "<leader>t";
         action = ":ToggleTerm<CR>";
         options = {

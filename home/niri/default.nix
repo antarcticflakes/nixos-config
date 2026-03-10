@@ -1,11 +1,16 @@
-{ config, pkgs, home, ... }:
+{
+  config,
+  pkgs,
+  home,
+  ...
+}:
 
 {
   home.file.".config/niri/config.kdl".source = ./config.kdl;
 
   systemd.user.services.polkit-gnome-authentication-agent-1 = {
-    Unit =  {
-      Description = "Polkit GNOME Authentication Agent"; 
+    Unit = {
+      Description = "Polkit GNOME Authentication Agent";
     };
     Service = {
       Type = "simple";

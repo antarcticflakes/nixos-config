@@ -15,25 +15,33 @@
     };
   };
 
-  outputs = inputs@{ self, nixpkgs, home-manager, nixvim, ... }: {
-    nixosConfigurations = {
-      starlight = nixpkgs.lib.nixosSystem {
-        specialArgs = { inherit inputs; };
-        modules = [
-          ./configuration.nix
+  outputs =
+    inputs@{
+      self,
+      nixpkgs,
+      home-manager,
+      nixvim,
+      ...
+    }:
+    {
+      nixosConfigurations = {
+        starlight = nixpkgs.lib.nixosSystem {
+          specialArgs = { inherit inputs; };
+          modules = [
+            ./configuration.nix
 
-          home-manager.nixosModules.home-manager
-          {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.users.ichiyo = import ./home;
-            home-manager.extraSpecialArgs = {
-              inherit nixvim;
-            };
-            home-manager.backupFileExtension = "*.hmbak";
-          }
-        ];
+            home-manager.nixosModules.home-manager
+            {
+              home-manager.useGlobalPkgs = true;
+              home-manager.useUserPackages = true;
+              home-manager.users.ichiyo = import ./home;
+              home-manager.extraSpecialArgs = {
+                inherit nixvim;
+              };
+              home-manager.backupFileExtension = "*.hmbak";
+            }
+          ];
+        };
       };
     };
-  };
 }

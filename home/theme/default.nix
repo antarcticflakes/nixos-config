@@ -5,7 +5,7 @@
     gtk.enable = true;
     name = "BreezeX-RosePine-Linux";
     package = pkgs.rose-pine-cursor;
-    size = 16;
+    size = 32;
   };
 
   gtk = {

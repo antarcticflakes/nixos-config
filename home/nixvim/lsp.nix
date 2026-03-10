@@ -12,9 +12,9 @@
           cmake = {
             enable = true;
           };
-	  zls = {
-	    enable = true;
-	  };
+          zls = {
+            enable = true;
+          };
         };
       };
     };

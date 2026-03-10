@@ -1,9 +1,14 @@
-{ config, pkgs, home, ... }:
+{
+  config,
+  pkgs,
+  home,
+  ...
+}:
 
 {
   home.packages = with pkgs; [
     fastfetch
-    
+
     zip
     xz
     unzip
@@ -32,6 +37,7 @@
     usbutils
 
     android-tools
+    qdl
 
     swaybg
 
@@ -47,7 +53,5 @@
     polkit_gnome
 
     xfce.thunar
-
-    just
   ];
 }

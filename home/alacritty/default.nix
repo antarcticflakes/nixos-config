@@ -17,14 +17,14 @@
           dim_foreground = "#908caa";
           bright_foreground = "#e0def4";
         };
-#         cursor = {
-#           text = "#e0def4";
-#           cursor = "#524f67";
-#         };
-#         vi_mode_cursor = {
-#           text = "#e0def4";
-#           cursor = "#524f67";
-#         };
+        #         cursor = {
+        #           text = "#e0def4";
+        #           cursor = "#524f67";
+        #         };
+        #         vi_mode_cursor = {
+        #           text = "#e0def4";
+        #           cursor = "#524f67";
+        #         };
         search = {
           matches = {
             foreground = "#908caa";

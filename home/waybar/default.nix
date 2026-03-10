@@ -1,4 +1,9 @@
-{ config, pkgs, home, ... }:
+{
+  config,
+  pkgs,
+  home,
+  ...
+}:
 
 {
   programs.waybar = {
