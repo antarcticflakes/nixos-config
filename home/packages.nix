@@ -44,6 +44,7 @@
     zig
     zls
     gcc
+    gdb
     gnumake
     cmake
     nasm
@@ -54,6 +55,7 @@
     polkit_gnome
 
     xfce.thunar
+    vlc
 
     qemu
   ];
