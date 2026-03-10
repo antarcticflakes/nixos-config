@@ -46,6 +46,7 @@
     gcc
     gnumake
     cmake
+    nasm
 
     mako
     wlogout
@@ -53,5 +54,7 @@
     polkit_gnome
 
     xfce.thunar
+
+    qemu
   ];
 }

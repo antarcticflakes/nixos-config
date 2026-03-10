@@ -22,6 +22,7 @@ window#waybar {
 #pulseaudio,
 #cpu,
 #memory,
+#battery,
 #tray,
 #custom-power {
     background-color: #1f1d2e;
@@ -73,6 +74,10 @@ window#waybar {
 
 #memory {
     color: #eb6f92;
+}
+
+#battery {
+    color: #ebbcba
 }
 
 #tray {
