@@ -151,7 +151,7 @@
       distrobox
       xwayland-satellite
       nix-output-monitor
-      nixfmt
+      nixfmt-tree
     ];
   };
 

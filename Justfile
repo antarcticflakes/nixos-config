@@ -2,5 +2,5 @@ switch:
     nh os switch .
 
 format:
-    nixfmt
+    treefmt .
 
