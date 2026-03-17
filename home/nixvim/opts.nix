@@ -14,5 +14,10 @@
       shell = "bash";
     };
     editorconfig.enable = true;
+    diagnostic.config = {
+      virtual_text = {
+        spacing = 2;
+      };
+    };
   };
 }
